@@ -14,12 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-	$users = Customer::all();
-	foreach($users as $user) {
-		echo $user->name;
-		echo "<br/>";
-	}
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
